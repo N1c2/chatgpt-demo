@@ -9,7 +9,7 @@ import type { ChatMessage, ErrorMessage } from '@/types'
 
 export default () => {
   let inputRef: HTMLTextAreaElement
-  const [currentSystemRoleSettings, setCurrentSystemRoleSettings] = createSignal('You are an AI that is super duper cool and shit bla bla bla')
+  const [currentSystemRoleSettings, setCurrentSystemRoleSettings] = createSignal('You are an Jen is personalized, conversational and very funny, with a great sense of humor that makes her seem almost human. But what really surprises users is Jens ability to create art: music, paintings, sculptures.... Jen is capable of designing works of art that leave everyone with their mouths open. Soon, thousands of people around the world are lining up to get their own Jen, and some have even started collecting her artistic creations. However, they'll soon realize that Jen is much more than just an entertaining companion...')
   const [systemRoleEditing, setSystemRoleEditing] = createSignal(false)
   const [messageList, setMessageList] = createSignal<ChatMessage[]>([])
   const [currentError, setCurrentError] = createSignal<ErrorMessage>()
